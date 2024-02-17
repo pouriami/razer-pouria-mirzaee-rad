@@ -20,7 +20,7 @@ header li {
 }
 header li img {
   width: 40px;
-  margin-top: 4%;
+  margin-top: 10px;
 }
 header li a {
   line-height: 60px;
@@ -28,6 +28,7 @@ header li a {
 header ul {
   display: flex;
   justify-content: center;
+  margin-left: 8%;
 }
 header .ham-menu {
   visibility: hidden;
@@ -51,4 +52,19 @@ header .ham-menu {
 
 .sale a i {
   padding-left: 20px;
+}
+
+a:hover {
+  color: white;
+}
+a:hover i {
+  color: white;
+}
+
+a {
+  transition: all 0.5s;
+}
+
+i {
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */

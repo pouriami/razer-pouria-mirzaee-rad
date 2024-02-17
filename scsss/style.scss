@@ -1,8 +1,7 @@
 @import "_normal.scss";
 @import "_var.scss";
 header{
-
-    width: 100%;
+    width: 100vh;
     height: 60px;
     background-color: $bg-color;
     border-bottom: 3px solid $razer-color;
@@ -10,7 +9,7 @@ header{
     li{
         img{
             width: 40px;
-            margin-top: 16px;
+            margin-top: 10px;
         }
         display: inline-block;
         color: gray;
@@ -20,8 +19,7 @@ header{
         }
     }
     ul{
-        display: flex;
-        justify-content: center;
+        margin-left: 8%;
     }
     .ham-menu{
         visibility: hidden;
@@ -53,3 +51,21 @@ header{
         }
     }
 }
+a:hover{
+color: white;
+i{
+    color: white;
+}
+}
+a{
+    transition: all .5s;
+}
+i{
+    transition: all .5s;
+}
+.sale :hover{
+    ul{
+        visibility: visible;
+        opacity: 1;
+    }
+} 
