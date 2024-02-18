@@ -9,6 +9,12 @@ header{
     background-color: $bg-color;
     border-bottom: 3px solid $razer-color;
     font-family: sans-serif;
+    nav{
+        width: 90%;
+        top: 0;
+        float: right;
+        margin-right: 6%;
+    }
     li{
         img{
             width: 40px;
@@ -28,8 +34,11 @@ header{
         justify-content: center;
     }
     .ham-menu{
-        visibility: hidden;
-        opacity: 0;
+        // visibility: hidden;
+        // opacity: 0;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 2%;
     }
 }
 .sale{
@@ -113,4 +122,26 @@ i{
 #close:hover{
     color: white;
     cursor: pointer;
+}
+.bar::after{
+content: ' ';
+display: inline-block;
+width: 100%;
+background-color: white;
+margin-top: 40%;
+height: 4px;
+border-radius: 5px;
+}
+.bar{
+    width: 20px;
+    height:4px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 5px;
+}
+.ham-menu:hover .bar{
+    transform: rotate(-45deg);
+}
+.ham-menu:hover .bar::after{
+    transform: rotate(-45deg);
 }

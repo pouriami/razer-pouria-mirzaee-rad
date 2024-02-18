@@ -17,6 +17,12 @@ header {
   border-bottom: 3px solid #44D62C;
   font-family: sans-serif;
 }
+header nav {
+  width: 90%;
+  top: 0;
+  float: right;
+  margin-right: 6%;
+}
 header li {
   display: inline-block;
   color: gray;
@@ -36,8 +42,9 @@ header ul {
   justify-content: center;
 }
 header .ham-menu {
-  visibility: hidden;
-  opacity: 0;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 2%;
 }
 
 .sale .dropdown {
@@ -122,4 +129,30 @@ i {
 #close:hover {
   color: white;
   cursor: pointer;
+}
+
+.bar::after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  margin-top: 40%;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.bar {
+  width: 20px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.ham-menu:hover .bar {
+  transform: rotate(-45deg);
+}
+
+.ham-menu:hover .bar::after {
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */
