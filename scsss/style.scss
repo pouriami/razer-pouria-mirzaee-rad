@@ -1,7 +1,10 @@
 @import "_normal.scss";
 @import "_var.scss";
+body{
+    width: 100%;
+}
 header{
-    width: 100vh;
+    width: 100%;
     height: 60px;
     background-color: $bg-color;
     border-bottom: 3px solid $razer-color;
@@ -13,13 +16,16 @@ header{
         }
         display: inline-block;
         color: gray;
-        margin-left: 4%;
+        margin-left: 3%;
         a{
             line-height: 60px;
         }
     }
     ul{
         margin-left: 8%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .ham-menu{
         visibility: hidden;
@@ -32,10 +38,11 @@ header{
         opacity: 0;
     }
 }
-.searchbox{
+.search-box{
     opacity: 0;
     visibility: hidden;
     display: none;
+
 }
 .search{
     a{
@@ -54,7 +61,7 @@ header{
 a:hover{
 color: white;
 i{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 }
 a{
@@ -63,9 +70,47 @@ a{
 i{
     transition: all .5s;
 }
-.sale :hover{
-    ul{
+.sale{
+    width: 60px;
+    height: 30px;
+}
+.sale:hover .dropdown{
         visibility: visible;
         opacity: 1;
-    }
 } 
+
+.dropdown{
+    background-color: $stroke;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.active{
+    visibility: visible !important;
+    position: absolute !important;
+    opacity: 1 !important;
+    background-color: $stroke;
+    color: white;
+    display: block;
+    top: 0;
+    left: 28%;
+    width: 60%;
+    height: 56px;
+    transition: all 1s;
+}
+.inp{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    color: white;
+}
+#close{
+    color: gray;
+    transition: all .5s;
+}
+#close:hover{
+    color: white;
+    cursor: pointer;
+}
