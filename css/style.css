@@ -16,12 +16,13 @@ header {
   background-color: black;
   border-bottom: 3px solid #44D62C;
   font-family: sans-serif;
+  position: fixed;
 }
 header nav {
-  width: 90%;
+  width: 80%;
   top: 0;
-  float: right;
-  margin-right: 6%;
+  margin-left: 10%;
+  position: absolute;
 }
 header li {
   display: inline-block;
@@ -42,6 +43,8 @@ header ul {
   justify-content: center;
 }
 header .ham-menu {
+  visibility: hidden;
+  opacity: 0;
   display: inline-block;
   margin-top: 20px;
   margin-left: 2%;
@@ -131,28 +134,62 @@ i {
   cursor: pointer;
 }
 
-.bar::after {
-  content: " ";
+#bar {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+#bar::after:hover {
+  background-color: red;
+}
+
+.main-logo {
+  width: 40px;
+  margin-top: 10px;
   display: inline-block;
-  width: 100%;
-  background-color: white;
-  margin-top: 40%;
-  height: 4px;
-  border-radius: 5px;
+  opacity: 0;
+  margin-left: 20%;
 }
 
-.bar {
-  width: 20px;
-  height: 4px;
-  background-color: rgb(255, 255, 255);
-  display: inline-block;
-  border-radius: 5px;
+@media screen and (max-width: 1150px) {
+  .ham-menu {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  nav {
+    width: 30% !important;
+    height: 200vh !important;
+    background-color: black;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute !important;
+    float: right;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-left: -10px !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .main-logo {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+.act-ham {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
-.ham-menu:hover .bar {
-  transform: rotate(-45deg);
-}
-
-.ham-menu:hover .bar::after {
-  transform: rotate(-45deg);
+body {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

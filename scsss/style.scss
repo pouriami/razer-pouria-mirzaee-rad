@@ -9,11 +9,12 @@ header{
     background-color: $bg-color;
     border-bottom: 3px solid $razer-color;
     font-family: sans-serif;
+    position: fixed;
     nav{
-        width: 90%;
+        width: 80%;
         top: 0;
-        float: right;
-        margin-right: 6%;
+        margin-left: 10%;
+        position: absolute;
     }
     li{
         img{
@@ -34,8 +35,8 @@ header{
         justify-content: center;
     }
     .ham-menu{
-        // visibility: hidden;
-        // opacity: 0;
+        visibility: hidden;
+        opacity: 0;
         display: inline-block;
         margin-top: 20px;
         margin-left: 2%;
@@ -123,25 +124,61 @@ i{
     color: white;
     cursor: pointer;
 }
-.bar::after{
-content: ' ';
-display: inline-block;
-width: 100%;
-background-color: white;
-margin-top: 40%;
-height: 4px;
-border-radius: 5px;
+#bar{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+
 }
-.bar{
-    width: 20px;
-    height:4px;
-    background-color: rgb(255, 255, 255);
+#bar::after:hover{
+    background-color: red;
+
+}
+.main-logo{
+    width: 40px;
+    margin-top: 10px;
     display: inline-block;
-    border-radius: 5px;
+    opacity: 0;
+    margin-left: 20%;
 }
-.ham-menu:hover .bar{
-    transform: rotate(-45deg);
+@media screen and (max-width:1150px){ 
+    .ham-menu{
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    nav{
+        width: 30% !important;
+        height: 200vh!important;
+        background-color: black;
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: absolute !important;
+        float: right;
+        margin-top: 60px;
+        margin-right: 50px;
+        margin-left: -10px !important;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+    .main-logo{
+        visibility: visible !important;
+        opacity: 1 !important;
+
+    }
 }
-.ham-menu:hover .bar::after{
-    transform: rotate(-45deg);
+.act-ham{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+body{
+    background-color: black;
 }
