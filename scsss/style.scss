@@ -9,7 +9,7 @@ header{
     background-color: $bg-color;
     border-bottom: 3px solid $razer-color;
     font-family: sans-serif;
-    position: fixed;
+    
     nav{
         width: 80%;
         top: 0;
@@ -284,4 +284,15 @@ body{
     background-color: #393b39;
     height: 500px;
     border-radius: 30px;
+}
+.under{
+    margin-top: 5%;
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+.modal{
+    
 }
