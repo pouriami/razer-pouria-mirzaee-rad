@@ -67,10 +67,11 @@
     <!-- end slider -->
 <div class="modal">
     <p>
-        my name is..... <button class="btn">click</button>
-    </p>
+        my name is..... </p>
+    <button class="btn-m">click</button>
 </div>
-<div class="name"><p>pouria mirzaee rad</p></div>
+<div class="name"><p>pouria mirzaee rad</p>
+<button class="c-btn">close</button></div>
 
 
 
@@ -78,5 +79,15 @@
 
 
     <script src="js/script.js"></script>
+    <script>
+    let modalEl=document.querySelector(".modal")
+let btnMEl=document.querySelector(".btn-m")
+    let nameEl=document.querySelector(".name")
+    let cBtn=document.querySelector(".c-btn") 
+    setTimeout(()=>{modalEl.classList.add('modal-v')}, 2000);
+    btnMEl.addEventListener(('click'),(()=>{nameEl.classList.add('modal-v')}))
+    cBtn.addEventListener("click",(()=>{nameEl.classList.remove('modal-v')}))
+    
+    </script>
 </body>
 </html>
