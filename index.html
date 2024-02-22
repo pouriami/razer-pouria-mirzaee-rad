@@ -70,8 +70,30 @@
         my name is..... </p>
     <button class="btn-m">click</button>
 </div>
-<div class="name"><p>pouria mirzaee rad</p>
-<button class="c-btn">close</button></div>
+<div class="name">
+    <p>pouria mirzaee rad</p>
+    <button class="c-btn">close</button>
+</div>
+<section class="main">
+    <div class="first pic">  <img src="img/main/1.jpg" alt="">
+    <div class="text"> <h1>razer blackshark v2 </h1><h2>for the pro</h2><p class="learn">learn more <span>></span></p>
+        <p class="buy">buy<span>></span></p>
+    </div></div>
+    <!-- <div class="two pic">
+        <img src="img/main/2.jpg" alt="">
+        <div class="text"> <h1>New Razer Blade 14 </h1><h2>small size big performance</h2><p class="learn">learn more <span>></span></p>
+            <p class="buy">buy<span>></span></p> -->
+        </div>
+    </div>
+</section>
+<section class="two">
+    <div class="two-pic">
+        <img src="img/main/2.jpg" alt="">
+        <div class="text"> <h1>New Razer Blade 14 </h1><h2>small size big performance</h2><p class="learn">learn more <span>></span></p>
+            <p class="buy">buy<span>></span></p>
+</section>
+<section class="three"></section>
+
 
 
 
@@ -81,11 +103,12 @@
     <script src="js/script.js"></script>
     <script>
     let modalEl=document.querySelector(".modal")
-let btnMEl=document.querySelector(".btn-m")
+    let btnMEl=document.querySelector(".btn-m")
     let nameEl=document.querySelector(".name")
     let cBtn=document.querySelector(".c-btn") 
     setTimeout(()=>{modalEl.classList.add('modal-v')}, 2000);
-    btnMEl.addEventListener(('click'),(()=>{nameEl.classList.add('modal-v')}))
+    btnMEl.addEventListener(('click'),(()=>{nameEl.classList.add('modal-v');
+    modalEl.classList.remove('modal-v')}))
     cBtn.addEventListener("click",(()=>{nameEl.classList.remove('modal-v')}))
     
     </script>

@@ -182,6 +182,8 @@ i{
 }
 body{
     background-color: black;
+    overflow-x: hidden;
+    height: 2000vh;
 }
 /*end nav*/
   .slider {
@@ -281,12 +283,13 @@ body{
     border-radius: 30px;
 }
 .under{
-    margin-top: 5%;
+    padding-top: 10px;
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: gray;
     color: white;
     text-align: center;
+    font-size: .8rem;
 }
 .modal{
     position: fixed;
@@ -299,6 +302,7 @@ body{
     border-radius: 20px;
     visibility: hidden;
         opacity: 0;
+        z-index: 101;
     p{
         color: white;
         text-align: center;
@@ -336,12 +340,13 @@ body{
     margin-top: 2%;
     margin-left: 4%;visibility: hidden;
         opacity: 0;
+        z-index: 100;
     P{
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     button{
         background-color: $stroke;
@@ -365,4 +370,220 @@ body{
 .modal-v{
     visibility:visible !important;
     opacity: 1 !important;
+    z-index: 6100;
+    background-color: black;
 }
+// end modal//
+.main{
+    width: 100%;
+    height: 120vh;
+    margin-top: 43rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .first{
+        position: relative;
+        width: 100%;
+        height: 130vh;
+    }
+    img{
+        position: relative;
+        width: 150%;
+        transform:translate(-17%);
+
+    }
+    .text{
+        p:hover{
+            border-bottom:2px solid white;
+        }
+        h1{
+            position: absolute;
+            top:12%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5000;
+            font-size: 4em;
+        }
+        h2{
+            font-family:'Courier New', Courier, monospace;
+                position: absolute;
+                top:20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                z-index: 5010;
+                font-size: 3em;
+        }
+        .learn{
+            position: absolute;
+            top:32%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5010;
+            font-size: 2em;
+            span{
+                color: rgb(0, 201, 0);
+            }
+        }
+        .buy{
+            position: absolute;
+            top:32%;
+            left: 70%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5010;
+            font-size: 2em;
+            span{
+                color: rgb(0, 201, 0);
+            }
+        }
+    }
+    .text::before{
+        content: '';
+        width: 100%;
+        height: 20px;
+        background-color: $stroke;
+        display: inline-block;
+    }
+    // .two{
+    // position: relative;
+    //     width: 100%;
+    //     height: 130vh;
+    // margin-top: 100%;}
+}
+.two{
+    width: 100%;
+    height: 120vh;
+    margin-top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .two-pic{
+        position: relative;
+        width: 100%;
+        height: 130vh;
+    }
+    img{
+        position: relative;
+        width: 150%;
+        transform:translate(-17%);
+
+    }
+    .text{
+        p:hover{
+            border-bottom:2px solid white;
+        }
+        h1{
+            position: absolute;
+            top:12%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5000;
+            font-size: 4em;
+        }
+        h2{
+            font-family:'Courier New', Courier, monospace;
+                position: absolute;
+                top:20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                z-index: 5010;
+                font-size: 3em;
+        }
+        .learn{
+            position: absolute;
+            top:32%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5010;
+            font-size: 2em;
+            span{
+                color: rgb(0, 201, 0);
+            }
+        }
+        .buy{
+            position: absolute;
+            top:32%;
+            left: 70%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5010;
+            font-size: 2em;
+            span{
+                color: rgb(0, 201, 0);
+            }
+        }
+    }
+    .text::before{
+        content: '';
+        width: 100%;
+        height: 20px;
+        background-color: $stroke;
+        display: inline-block;
+    }
+    // .two{
+    // position: relative;
+    //     width: 100%;
+    //     height: 130vh;
+    // margin-top: 100%;}
+}
+
+
+
+    @media screen and (max-width:1150px){
+        .main{
+            img{
+                position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 75vh;
+            min-height: 700px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center bottom;
+            object-position: center bottom;
+            }
+        }
+
+    }
+    @media screen and (max-width:1000px){
+        .main{
+        .text{
+            h1{
+                font-size: 2em;
+            }
+        
+        h2{
+            font-size: 2em;
+            top: 25%;
+        }
+    }
+    }
+    .two{
+        .text{
+            h1{
+                font-size: 1em;
+            }
+        
+        h2{
+            font-size: 1em;
+            top: 15%;
+        }
+
+        .learn,.buy{
+            font-size: 1em;
+            top: 20%;
+        }
+    }
+    }
+    }
