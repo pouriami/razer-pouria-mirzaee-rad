@@ -9,12 +9,20 @@ header{
     background-color: $bg-color;
     border-bottom: 3px solid $razer-color;
     font-family: sans-serif;
+
     
     nav{
         width: 80%;
         top: 0;
         margin-left: 10%;
         position: absolute;
+        position: fixed;
+        z-index: 5020;
+        background-color: $bg-color;
+        border-bottom: 3px solid $razer-color;
+        height: 60px;
+        width: 100%;
+        margin-left: 0;
     }
     li{
         img{
@@ -147,7 +155,7 @@ i{
     }
     nav{
         width: 30% !important;
-        height: 200vh!important;
+        height: 120%!important;
         background-color: black;
         display: block;
         flex-wrap: wrap;
@@ -709,4 +717,125 @@ body{
     }
     }
     // end three and big pic
-    
+
+
+
+    .last-pic{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $stroke;
+        justify-content: space-between;
+        flex-direction: row;
+        // gap: 30px;
+        .pics{
+            width: 49.1%;
+            position: relative;
+   
+            gap: 50px;
+            margin: 5px;
+
+            
+        }
+        img{
+            width: 100%;
+            position: relative;
+            height: 100%;
+        }
+        h1{
+            position: absolute;
+            top:15%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5000;
+            font-size: 1.8em;
+        }
+        h2{
+            position: absolute;
+            top:25%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5000;
+            font-size: 1.5em;
+        }
+        .learn{
+            position: absolute;
+            top:40%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5010;
+            font-size: 1em;
+            span{
+                color: rgb(0, 201, 0);
+            }
+        }
+        .buy{
+            position: absolute;
+            top:40%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5010;
+            font-size: 1em;
+            span{
+                color: rgb(0, 201, 0);
+            }
+        }
+        .learn:hover,.buy:hover{
+            border-bottom: 2px solid white;
+            transition: all 0.5s;
+    }
+}
+    @media screen and (max-width:1200px){
+        .last-pic{
+        h1{
+            font-size: 0.9em;
+        }
+        h2{
+            font-size: 0.75em;
+        }
+        .learn, .buy {font-size: 0.5em;
+    }
+    }
+}
+@media screen and (max-width:1110px){
+    .last-pic{
+        align-items: center;
+        img{
+            width: 200%;
+        }
+        h1{
+            position: absolute;
+            top:25%;
+            left: 100%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5000;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        h2{
+            top:45%;
+            left: 100%;
+        }
+        .learn{
+                font-size: 1em;
+        }
+        .buy{
+            font-size: 0.9em;
+            left: 220%;
+            width: 120%;
+        }
+    }
+
+}
+@media screen and (max-width:590px){
+    .last-pic{
+        h1{
+            font-size: 1rem;
+        }
+    }
+}
+// end main

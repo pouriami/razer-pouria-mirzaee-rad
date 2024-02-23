@@ -24,6 +24,13 @@ header nav {
   top: 0;
   margin-left: 10%;
   position: absolute;
+  position: fixed;
+  z-index: 5020;
+  background-color: black;
+  border-bottom: 3px solid #44D62C;
+  height: 60px;
+  width: 100%;
+  margin-left: 0;
 }
 header li {
   display: inline-block;
@@ -173,7 +180,7 @@ i {
   }
   nav {
     width: 30% !important;
-    height: 200vh !important;
+    height: 120% !important;
     background-color: black;
     display: block;
     -ms-flex-wrap: wrap;
@@ -787,5 +794,132 @@ body {
   .two .text .learn {
     font-size: 1em;
     top: 20%;
+  }
+}
+.last-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #222222;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.last-pic .pics {
+  width: 49.1%;
+  position: relative;
+  gap: 50px;
+  margin: 5px;
+}
+.last-pic img {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.last-pic h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5000;
+  font-size: 1.8em;
+}
+.last-pic h2 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5000;
+  font-size: 1.5em;
+}
+.last-pic .learn {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5010;
+  font-size: 1em;
+}
+.last-pic .learn span {
+  color: rgb(0, 201, 0);
+}
+.last-pic .buy {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5010;
+  font-size: 1em;
+}
+.last-pic .buy span {
+  color: rgb(0, 201, 0);
+}
+.last-pic .learn:hover, .last-pic .buy:hover {
+  border-bottom: 2px solid white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .last-pic h1 {
+    font-size: 0.9em;
+  }
+  .last-pic h2 {
+    font-size: 0.75em;
+  }
+  .last-pic .learn, .last-pic .buy {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .last-pic {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .last-pic img {
+    width: 200%;
+  }
+  .last-pic h1 {
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    z-index: 5000;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .last-pic h2 {
+    top: 45%;
+    left: 100%;
+  }
+  .last-pic .learn {
+    font-size: 1em;
+  }
+  .last-pic .buy {
+    font-size: 0.9em;
+    left: 220%;
+    width: 120%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .last-pic h1 {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
