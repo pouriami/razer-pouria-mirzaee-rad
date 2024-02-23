@@ -632,6 +632,20 @@ body{
                 object-position: center bottom;
             }
         }
+        .three{
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                height: 75vh;
+                min-height: 700px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -o-object-position: center bottom;
+                object-position: center bottom;
+            }
+        }
 
     }
     @media screen and (max-width:1000px){
@@ -664,4 +678,35 @@ body{
         }
     }
     }
+    .three{
+        .text{
+            h1{
+                font-size: 2em;
+            }
+        
+        h2{
+            font-size: 2em;
+            top: 25%;
+        }
     }
+    }
+    .two{
+        .text{
+            h1{
+                font-size: 1em;
+            }
+        
+        h2{
+            font-size: 1em;
+            top: 15%;
+        }
+
+        .learn{
+            font-size: 1em;
+            top: 20%;
+        }
+    }
+    }
+    }
+    // end three and big pic
+    
