@@ -234,7 +234,6 @@ i {
 body {
   background-color: black;
   overflow-x: hidden;
-  height: 2000vh;
 }
 
 /*end nav*/
@@ -922,4 +921,18 @@ body {
   .last-pic h1 {
     font-size: 1rem;
   }
+}
+footer {
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

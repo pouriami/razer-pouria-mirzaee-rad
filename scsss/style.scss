@@ -191,7 +191,6 @@ i{
 body{
     background-color: black;
     overflow-x: hidden;
-    height: 2000vh;
 }
 /*end nav*/
   .slider {
@@ -839,3 +838,11 @@ body{
     }
 }
 // end main
+// start last part
+footer{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
