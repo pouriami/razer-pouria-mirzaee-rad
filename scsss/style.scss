@@ -2,6 +2,9 @@
 @import "_var.scss";
 body{
     width: 100%;
+    overflow-x: hidden;
+
+    overflow-y: auto;
 }
 header{
     width: 100%;
@@ -190,7 +193,6 @@ i{
 }
 body{
     background-color: black;
-    overflow-x: hidden;
 }
 /*end nav*/
   .slider {
@@ -300,8 +302,9 @@ body{
 }
 .modal{
     position: fixed;
-    bottom: 2%;
-    right: 2%;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%,-50%);;
     background-color:black;
     box-shadow: 0px 0px 10px 1px $razer-color;
     width: 300px;
@@ -841,8 +844,45 @@ body{
 // start last part
 footer{
     width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    background-color: rgb(15, 15, 15);
+    height: 70vh;
+    ul.item{
+        flex-wrap: wrap;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+        margin-left: 7%;
+        margin-right: 40%;
+        gap: 10px;
+        margin-bottom: 5px;
+        li{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            font-size: 0.8rem;
+        }
+    }
+    .down{
+        li{
+            color: gray;
+        }
+    }
+}
+footer::before{
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color: $stroke;
+    display: block;
+}
+.for{
+    color: $razer-color;
+    margin-right: -40%;
+}
+@media screen and (max-width:880px){
+footer{
+    height: 100%;
+}
 }
